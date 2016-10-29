@@ -22,6 +22,7 @@ layout: default
   </ul>
 
   <!-- Pagination links https://jekyllrb.com/docs/pagination/ -->
+  {% if paginator.total_pages > 1 %}
   <div class="pagination">
     <ul>
       <li>
@@ -43,6 +44,7 @@ layout: default
       </li>
     </ul>
   </div>
+  {% endif %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
