@@ -26,7 +26,7 @@ github_username:  honza-kasik
 google_analytics: UA-86476888-1
 
 gems: [jekyll-paginate]
-paginate: 2
+paginate: 4
 
 # Build settings
 markdown: kramdown
