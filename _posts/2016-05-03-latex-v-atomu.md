@@ -1,5 +1,5 @@
 ---
-title: Latex v Atomu na Fedoře
+title: LaTeX v Atomu na Fedoře
 ---
 
 Nedávno jsem kvůli psaní bakalářské práce a dalších věcí v LaTeXu hledal nějaký rozumný editor, který by mi v tom pomohl. Na editaci menších věcí v HTML nebo Markdown běžně používám Atom a po doporučení jsem se jej rozhodl použít i pro LaTeX.

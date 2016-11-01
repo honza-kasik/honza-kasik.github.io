@@ -1,6 +1,9 @@
 ---
 title: LOMO Lubitel 166B — nákup a první seznámení
 excerpt: Už delší dobu jsem pokukoval po nějakém „lepším” foťáku. Mé zkušenosti s focením jsou však takřka nulové a přístroj s lepšími vlastnostmi by to asi nezměnil. Nevěděl jsem, jak se tohoto faktu zbavit — tedy až donedávna.
+tags:
+- photography
+- tech
 ---
 
 ![Obrázek foťáku](/assets/images/2015-08-29-moje-nova-hracka_intro.jpg){: .img-intro }

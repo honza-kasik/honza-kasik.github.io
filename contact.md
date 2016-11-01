@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-* Email: [{{site.email}}](mailto:{{site.email}})
+* Email: [Send me an email!](mailto:{{site.email | encode_email}})
 * GitHub: [{{site.github_username}}](https://github.com/{{site.github_username}})
 * Twitter: [{{site.twitter_username}}](https://twitter.com/{{site.twitter_username}})
-* LinkedIn: [https://cz.linkedin.com/in/honza-kašík-93555ab8](https://cz.linkedin.com/in/honza-kašík-93555ab8)
+* LinkedIn: [{{site.linkedin_username}}](https://cz.linkedin.com/in/{{site.linkedin_username}})
