@@ -26,10 +26,11 @@ github_username:  honza-kasik
 linkedin_username: honzakasik
 google_analytics: UA-86476888-1
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-email-protect
   - jekyll-sitemap
+  - jekyll-mermaid
 paginate: 4
 
 # Build settings
