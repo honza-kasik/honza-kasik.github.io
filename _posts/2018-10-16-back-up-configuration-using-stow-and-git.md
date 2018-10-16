@@ -6,7 +6,7 @@ tags:
 - stow
 - simple hack
 ---
-After I got new work laptop, I needed to transfer some configuration files to it from the old one. This introduced an opportunity to finaly start versioning it and also providing more flexible backup handle. It surely is not a good idea to set version control above whole `$HOME`. When looking after solution to this problem I stumbled upon GNU Stow.
+After I got new work laptop, I needed to transfer some configuration files to it from the old one. This introduced an opportunity to start versioning it, and also providing more flexible backup handle, finally. It surely is not a good idea to set version control above whole `$HOME`. When looking for solution to this problemi, I stumbled upon GNU Stow.
 
 Let's say your `$HOME` looks like this:
 
@@ -22,7 +22,7 @@ Downloads
 ...
 ```
 
-You surely know know that `.bashrc` and `.bash_profile` represent Bash configuration. But how to pass this information to back up solution/versioning system when you want to separate configurations for different software?
+You surely know that `.bashrc` and `.bash_profile` represent Bash configuration. But how to pass this information to back up solution/versioning system when you want to separate configurations for different software?
 
 ## GNU Stow
 
@@ -50,5 +50,10 @@ What `stow` command does by default is that it takes the contents of folder whic
 
 ## Version it!
 
-What lefts is using git or your preffered VCS to version this configuration. Just run `git init`, `git add .` and `git commit -m "Initial commit"` in `configuration` directory and you are all set.
+The last thing is using git or your preffered VCS to version this configuration. Just run `git init`, `git add .` and `git commit -m "Initial commit"` in `configuration` directory and you are all set.
+
+## Resources
+
+* [GNU Stow manual](https://www.gnu.org/software/stow/manual/)
+* [Git - Documentation](https://git-scm.com/doc)
  
