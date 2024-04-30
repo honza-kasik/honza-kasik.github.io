@@ -44,5 +44,3 @@ defaults:
       layout: post
       author: "Honza Kašík"
 
-disqus:
-  shortname: honzakasik

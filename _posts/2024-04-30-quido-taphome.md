@@ -65,7 +65,7 @@ Děsivé, že? Ale kdepak. Prvních (z pohledu TapHome jde o byte array) 8 bytů
 ['0b0', '0b0', '0b0', '0b0', '0b0', '0b0', '0b0', '0b0', '0b0', '0b0', '0b0', '0b11011', '0b10011001']
 ```
 
-Lepší, že? Teď je tu takový malý trik. Ač TapHome používá indexaci v array klasicky zleva do prava, nejvýznamnější bit je úplně pravo a pozice bitu zprava odpovídá stavu vstupu. V příkladu ním tedy Quido říká, že zapnuté vstupy jsou 1, 4, 5, 8, 9, 10, 12 a 13.
+Lepší, že? Teď je tu takový malý trik. Ač TapHome používá indexaci v array klasicky zleva do prava, nejvýznamnější bit je úplně pravo a pozice bitu zprava odpovídá stavu vstupu. V příkladu nám tedy Quido říká, že zapnuté vstupy jsou 1, 4, 5, 8, 9, 10, 12 a 13.
 
 Pokud chceme zjistit stav vstupu 1, naivní kód v TapHome skriptovacím jazyce vypadá takto:
 
