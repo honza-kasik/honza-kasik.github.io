@@ -16,9 +16,8 @@
 title: Honza Kašík
 email: jsem@honzakasik.cz
 description: > # this means to ignore newlines until "baseurl:"
-  Student at Palacky University in Olomouc and Quality Engineer at Red Hat Czech
-  sharing solutions to problems which he runs into, his hobbies and interests
-  to the world! Sharing is caring!
+  Quality Engineer at Red Hat Czech sharing solutions to problems which he runs into, his hobbies and interests
+  to the world!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://honzakasik.cz" # the base hostname & protocol for your site
 twitter_username: HonzaKasik
