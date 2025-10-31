@@ -51,29 +51,29 @@ Nejdříve musíme nakonfigurovat "hub" - blok konfguace pod kterým jsou přís
   delay: 0
   timeout: 2
   message_wait_milliseconds: 30
-    climates:
-      - name: "Vnitřní jednotka tajné doupě"
-        unique_id: vnitrni_jednotka_tajne_doupe
-        slave: 1
-        hvac_onoff_register: 52
-        address: 59
-        target_temp_register: 58
-        scale: 0.1
-        hvac_mode_register: 
-          address: 53
-          values:
-          state_auto: 0
-          state_cool: 1
-          state_dry: 2
-          state_fan_only: 3
-          state_heat: 4
-        fan_mode_register:
-          address: 54
-          values:
-          state_fan_auto: 0
-          state_fan_low: 1
-          state_fan_medium: 2
-          state_fan_high: 3
+  climates:
+    - name: "Vnitřní jednotka tajné doupě"
+      unique_id: vnitrni_jednotka_tajne_doupe
+      slave: 1
+      hvac_onoff_register: 52
+      address: 59
+      target_temp_register: 58
+      scale: 0.1
+      hvac_mode_register: 
+        address: 53
+        values:
+        state_auto: 0
+        state_cool: 1
+        state_dry: 2
+        state_fan_only: 3
+        state_heat: 4
+      fan_mode_register:
+        address: 54
+        values:
+        state_fan_auto: 0
+        state_fan_low: 1
+        state_fan_medium: 2
+        state_fan_high: 3
 ```
 
 Vnitřní jednotka obsadí vždy 50 registrů a první začíná na registru 50 (číslováno od 0). Každá další začíná na i*50. Je ale možné, že jednotka prostě přeskočí očekávaný rozsah a je přístupná až na konci – místo 100 až 150 obsadí 200 až 250.
