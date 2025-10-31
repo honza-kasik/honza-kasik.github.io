@@ -27,7 +27,13 @@ Chtěl jsem spolehlivé ovládání multisplitu bez cloudu a internetu. Rozhodl 
 
 ## Home Assistant konfigurace
 
-Nejdříve musíme nakonfigurovat "hub" - blok konfguace pod kterým jsou přístupné jednotlivé entity. Je potřeba nakonfigurovat IP adresu převodníku a port.
+Veškerou konfiguraci mám v samostatném souboru `modbus.yaml` ve adresáři s konfigurací Home Assistenta. V `configuration.yaml` ji takto vkládám:
+
+```yaml
+modbus: !include modbus.yaml
+```
+
+V souboru `modbus.yaml` nejdříve musíme nakonfigurovat "hub" - blok konfguace pod kterým jsou přístupné jednotlivé entity. Je potřeba nakonfigurovat IP adresu převodníku a port.
 
 `delay`, `timeout` a `message_wait_milliseconds` jsou hodnoty získané metodou pokus omyl, které se mi osvědčily:
 
