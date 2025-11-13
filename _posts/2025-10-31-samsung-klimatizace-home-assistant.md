@@ -13,7 +13,7 @@ Chtěl jsem spolehlivé ovládání multisplitu bez cloudu a internetu. Rozhodl 
 
 * Samsung MIM-B19N jednotku – Poskytuje Modbus RTU rozhraní a připojuje se k proprietární sběrnici venkovní jednotky.
 
-* Modbus RTU/TCP převodník – Osobně používám tento čtyřkanálový od Waveshare, protože k němu mám připojené elektroměry a relé. [Waveshare 4 channel RS485 to Ethernet server](https://www.aliexpress.com/item/1005006402111790.html)
+* Modbus RTU/TCP převodník – Osobně používám tento čtyřkanálový od Waveshare, protože k němu mám připojené elektroměry a relé [Waveshare 4 channel RS485 to Ethernet server](https://www.aliexpress.com/item/1005006402111790.html). V síti se tváří jako 4 samostatné rozhraní. U každého lze nastavit jiné časování/paritu/stop bits pro Modbus RTU.
 
 * Běžící Home Assistant s vhodnou konfigurací – Plně aktualizovaný.
 
@@ -97,12 +97,12 @@ Doporučuji [toto super video jak zadat ovládací příkazy](https://www.youtub
 3. Stiskněte zároveň tlačítka na snížení a zvýšení teploty – jde to i jedním prstem – a vložte baterii.
 4. Ovladač se spustí v režimu zadávání příkazů.
 5. Přepínačem intenzity ventilátoru zadejte na první obrazovce _d2_. To je označení "direct" příkazů ke změně pouze jednoho parametru. Jinak se zadává celá konfigurace a to je děsná otrava.
-6. Stikněte tlačítko "mode". Dostanete se na další obrazovku.
+6. Stiskněte tlačítko "mode". Dostanete se na další obrazovku.
 7. Zadejte _05_. To je číslo segmentu, kde se nachází konfigurace, kterou chceme změnit. V tomto případě povolení centrálního ovládání.
-8. Stikněte tlačítko "mode".
+8. Stiskněte tlačítko "mode".
 9. Na třetí obrazovce zadejte _10_. _1_ je hodnota, kterou chceme zapsat. _0_ je vata.
-10. Namiřte ovladač na jednotku a stikněte tlačítko zapnout. Ozve se melodie zapnutí.
-11. Stikněte tlačítko zapnout znovu až se ozve krátký zvuk. To je potvrzení, že se už nic nezměnilo a hodnota je zapsaná.
+10. Namiřte ovladač na jednotku a stiskněte tlačítko zapnout. Ozve se melodie zapnutí.
+11. Stiskněte tlačítko zapnout znovu až se ozve krátký zvuk. To je potvrzení, že se už nic nezměnilo a hodnota je zapsaná.
 12. Takto můžete oběhnout všechny jednotky.
 13. Ovladač se vrátí zpět do běžného režimu cyklem: vyndání jedné baterky, stisk tlačítka vypnout, vložením jedné baterky.
 
