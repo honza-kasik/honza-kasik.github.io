@@ -39,7 +39,7 @@ Třeba to ale znamená, že zařízení budou spolehlivá když už chybí dokum
 
 Asi jsem tušil, co se bude dít, když jsem dával dohromady architekturu chytré domácnosti. Chtěl jsem stmívatelná světla. TapHome samozřejmě nabízí proprietární dimmery, ale chtěl jsem, aby v případě, že třeba TapHome zanikne, bylo vše rozšiřitelné a udržovatelné. Postavil jsem tedy světla nad DMX – profesionálním protokolem pro ovládání světel a aparatury na koncertech.
 
-TapHome pro rotokol DMX nabízel bránu/gateway. Strávil jsem desítky hodin pokusy rozchodit ji, aby fungovala. Brána v impleemntaci firmware špatně provádela časování (příliš dlouhé pauzy) a dekodér to nezvládl. I jen jedno světlo připojené k dekodéru zuřivě blikalo. Vím, že podobné problémy měli i další uživatelé.
+TapHome pro protokol DMX nabízel bránu/gateway. Strávil jsem desítky hodin pokusy rozchodit ji, aby fungovala. Brána v implementaci firmware špatně provádela časování (příliš dlouhé pauzy) a dekodér to nezvládl. I jen jedno světlo připojené k dekodéru zuřivě blikalo. Vím, že podobné problémy měli i další uživatelé.
 
 Tady jsem si užil první zkušenost s podporou.
 
