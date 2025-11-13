@@ -45,7 +45,7 @@ Tady jsem si užil první zkušenost s podporou.
 
 ## Pátý problém: neprofesionální podpora
 
-Ticket systém? Nebo snad JIRA? Ale kdeže, klíčovým prvkem podpory je skupina na Facebooku, kde fungují zaměstanci TapHome. Když položíte dotaz, třeba budete mít štěstía nasměrují vás do soukromých zpráv/emailu.
+Ticket systém? Nebo snad JIRA? Ale kdeže, klíčovým prvkem podpory je skupina na Facebooku, kde fungují zaměstanci TapHome. Když položíte dotaz, třeba budete mít štěstí a nasměrují vás do soukromých zpráv/emailu.
 
 S podporou jsem si i volal. Nakonec po cca měsíci dodali novou verzi firmware pro DMX bránu, která vše trochu stabilizovala. Problém ale přetrvával.
 
@@ -55,9 +55,9 @@ Po tomto incidentu jsme se rozhodl s TapHome skoncovat. Nechcete někdo DMX brá
 
 ## Šestý problém: aktualizace
 
-Při pohledu do skupiny na Facebooku je vidět, že častým problémem jsou aktualizace. S čím jsem měl problém já osobně bylo, že aktualizace nepopisovala změny, které jsou obsaženy. Běžné jsou ale problémy, kdy po aktualizaci firmware nastane problém.
+Při pohledu do skupiny na Facebooku je vidět, že častým problémem jsou aktualizace. S čím jsem měl problém já osobně bylo, že aktualizace nepopisovala změny, které jsou obsaženy. Běžné ale je, že po aktualizaci firmware nastane problém.
 
-Chcete přece aktualizovat by byl dům bezpečný, že? Tak tady prý podle "podpory" platí, že když vše funguje tak se nic neaktualizuje.
+Chcete přece aktualizovat by byl dům bezpečný, že? Tak tady prý podle "podpory" z Facebooku platí, že když vše funguje tak se nic neaktualizuje.
 
 Vše jde ruku v ruce s nedostatečnou dokumentací.
 
