@@ -11,11 +11,11 @@ Na začátku byla idea chytré domácnosti jak ji asi chce každý: spolehlivá,
 
 TapHome jsem vybral hlavně kvůli funkci packet parseru, která slibovala snadnou integraci všeho, co nemá oficiální integraci od TapHome a celý systém vyapdal díky tomu celkem otevřeně.
 
-S odstupem času jsem se rozhodl sepsat proč jsem nakonec TapHome zahodil. Shrnuji své rok staré zkušenosti a některé věci nemusí být aktuální. Jedná se mé osobní názory.
+S odstupem času jsem se rozhodl sepsat proč jsem nakonec TapHome zahodil. Shrnuji své rok staré zkušenosti a některé věci nemusí být aktuální. Jedná se mé osobní názory v rámci recenze.
 
 ## První problém: dokumentace
 
-Při [integraci Papouch Quido]({% post_url 2024-04-30-quido-taphome %}) jsem narazil na to, že v dokumentaci chybí podstatná část funkcí packet parseru. Musel jsme rpocházet existující, nezdokumentovaná řešení a podle názvů funkcí hádat, jestli by se mi třeba daná funkce nehodila.
+Při [integraci Papouch Quido]({% post_url 2024-04-30-quido-taphome %}) jsem narazil na to, že v dokumentaci chybí podstatná část funkcí packet parseru. Musel jsme procházet existující, nezdokumentovaná řešení a podle názvů funkcí hádat, jestli by se mi třeba daná funkce nehodila.
 
 Celá hierarchie zařízení nebyla (a možná stále není) v dokumentaci nikde zmíněna a musel jsem prostě hádat. Tehdy jsme to skousl s tím, že se třeba ukáže, že výhody převažují.
 
