@@ -16,14 +16,17 @@
 title: Honza Kašík
 email: jsem@honzakasik.cz
 description: > # this means to ignore newlines until "baseurl:"
-  Quality Engineer at Red Hat Czech sharing solutions to problems which he runs into, his hobbies and interests
-  to the world!
+  Software developer at IBM working on WildFly, mod_cluster, native connectors, and distributed systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://honzakasik.cz" # the base hostname & protocol for your site
 twitter_username: HonzaKasik
 github_username:  honza-kasik
 linkedin_username: honzakasik
 google_analytics: UA-86476888-1
+
+header_pages:
+  - projects.md
+  - contact.md
 
 plugins:
   - jekyll-paginate
@@ -43,4 +46,3 @@ defaults:
     values:
       layout: post
       author: "Honza Kašík"
-
