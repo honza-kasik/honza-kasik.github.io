@@ -23,7 +23,9 @@ Použil jsem ponorné tlakové čidlo pro měření hladiny vody. Čidlo je dole
 
 Na AliExpressu se podobná čidla prodávají v několika variantách: 4–20 mA, 0–10 V, RS485, 0–5 V nebo 0–3.3 V. Pro ESP32 je zásadní použít variantu s výstupem vhodným pro jeho ADC vstup. Na ADC vstup ESP32 nesmí přijít víc než 3,3 V, jinak hrozí poškození desky.
 
-Já tedy používám analogovou variantu vhodnou pro přímé čtení ESP32 a napětí čtu přes ADC vstup.
+Já tedy používám analogovou variantu vhodnou pro přímé čtení ESP32 a napětí čtu přes ADC vstup. Konkrétně jsem bral variantu s rozsahem `0–3 m`, kabelem `5 m`, výstupem `0–3.3 V` a napájením `5 V`. Rozsah `0–3 m` je pro moji nádrž vyšší než skutečná maximální hladina, ale pořád dává dostatečnou rezervu i použitelné rozlišení. To je pro ESP32 praktická kombinace: napájení `5 V` i ADC vstup jsou dostupné přímo na desce, takže není potřeba žádný další převodník.
+
+Je dobré počítat i s tím, že v kabelu čidla je tenká hadička pro kompenzaci atmosférického tlaku. Čidlo tak neměří absolutní tlak proti uzavřenému prostoru v kabelu, ale tlak vodního sloupce vůči atmosféře. U mě konec kabelu vede do IP67 krabice s ESP32 a v tomhle zapojení to funguje bez problémů. Zkracování kabelu je kvůli hadičce dost nepraktické, protože nejde jen o pár vodičů v bužírce.
 
 ## Hardware
 
@@ -86,3 +88,5 @@ tank_height_m: "2.194"
 * [Olimex ESP32-POE](https://www.olimex.com/Products/IoT/ESP32/ESP32-POE/open-source-hardware)
 * [Ponorné čidlo](https://www.aliexpress.com/item/1005008549415700.html)
 * IP67 krabice, DIN lišta a průchodky z Hornbachu
+
+EDIT: Doplněny podrobnosti k použité variantě tlakového čidla a poznámka k hadičce v kabelu.
