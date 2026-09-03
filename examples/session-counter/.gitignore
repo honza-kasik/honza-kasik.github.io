@@ -1,0 +1,5 @@
+/target/
+/wildfly-*.zip
+/wildfly-*/
+/node-a/
+/node-b/
