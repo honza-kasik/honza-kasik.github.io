@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "You Probably Don’t Need an LLM to Classify Czech Municipal Documents"
+title: "You probably don’t need an LLM to classify Czech municipal documents"
 date: 2026-09-20
 categories: [machine learning, nlp, text classification, czech, ai]
 excerpt: "How I ended up using a small Czech encoder, active learning and 733 manually curated examples instead of a generative LLM to classify municipal resolutions."
