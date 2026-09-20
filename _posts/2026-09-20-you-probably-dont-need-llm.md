@@ -459,3 +459,7 @@ If the output is one of a small number of known categories, a small specialized 
 Perhaps the most interesting part is that the model itself is now one of the easiest components to replace.
 
 If licensing or quality requirements eventually push me toward another Czech or multilingual encoder, the expensive part of the work is already done: 733 human decisions defining what the correct answer actually means.
+
+## Resources
+
+* https://github.com/honza-kasik/litovel-resolution-classifier
