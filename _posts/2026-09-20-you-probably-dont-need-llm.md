@@ -87,7 +87,7 @@ pick the highest one
 
 It does not need to generate anything since task is tightly constrained: given one text, choose one of fourteen known classes. That is exactly the sort of problem an encoder classifier is designed for.
 
-## But now we need labeled data
+### But now we need labeled data
 
 A pretrained EleCzech model understands Czech, but it knows nothing about my categories.
 
@@ -107,7 +107,7 @@ For this type of problem, however, ground truth is not some absolute physical tr
 
 And that is where the project became more interesting...
 
-## The hardest part was not the model, but the taxonomy
+#### The hardest part was not the model, but the taxonomy
 
 At first I had a list of categories. Very quickly, it became obvious that a list was not enough.
 
@@ -152,7 +152,7 @@ So a grant to a sports club is `sport`. A sale or lease of municipal land is usu
 
 Without rules like these, the training dataset would contain contradictory examples, and expecting consistent behavior from the model would be unreasonable.
 
-## The first results looked suspiciously good
+### The first results looked suspiciously good
 
 After creating the first reasonably sized dataset, I randomly split it into train, validation and test sets.
 
@@ -166,7 +166,7 @@ The result was roughly 93% accuracy. That looked excellent. But municipal resolu
 
 With a random split, nearly idaentical templates can easily appear in both training and test data. The model may therefore appear smarter than it really is.
 
-## Temporal split: better, but not leakage-proof
+### Temporal split: better, but not leakage-proof
 
 To get an evaluation that better matched the intended deployment scenario, I tried a chronological split:
 
@@ -208,7 +208,7 @@ But it does not necessarily answer a stricter question:
 
 Those are two different things.
 
-## A stricter test would group similar templates
+### A stricter test would group similar templates
 
 If the goal were specifically to measure generalization to unseen patterns, a better retrospective evaluation would be to identify near-duplicate or template families and keep each family entirely on one side of the split.
 
@@ -226,9 +226,7 @@ keep each group entirely in train or test
 
 That would prevent the model from learning one version of a recurring template and being tested on an almost identical version. Ideally, such grouping could also be combined with temporal separation.
 
-But there is a trade-off.
-
-Recurring templates are genuinely part of the production environment. If the City of Litovel publishes the same type of easement resolution every year, recognizing that recurring pattern is legitimate production performance. Removing all such similarity from the test set measures a different and deliberately harder problem.
+But there is a trade-off: Recurring templates are genuinely part of the production environment. If the City of Litovel publishes the same type of easement resolution every year, recognizing that recurring pattern is legitimate production performance. Removing all such similarity from the test set measures a different and deliberately harder problem.
 
 So there are really at least two useful evaluation questions:
 
@@ -240,11 +238,7 @@ So there are really at least two useful evaluation questions:
    → group/template-aware evaluation
 ```
 
-One metric should not be mistaken for the other.
-
-## Randomly labeling more data is inefficient
-
-At this point I could simply have labeled several hundred more random resolutions. But the model already handled many of them easily. For example:
+One metric should not be mistaken for the other. At this point I could simply have labeled several hundred more random resolutions. But the model already handled many of them easily. For example:
 
 ```text
 property 0.99
@@ -295,7 +289,7 @@ culture  0.01
 
 has a very large margin. Another manually labeled example of the same type is unlikely to add much value.
 
-## Low accuracy on active-learning batches was a good sign
+### Low accuracy on active-learning batches was a good sign
 
 Some active-learning rounds produced only 30-50% accuracy on the selected examples.
 
@@ -303,7 +297,7 @@ At first glance that sounds terrible. In reality, it is exactly what we want. Th
 
 If the model achieved 99% accuracy on an active-learning batch, that would more likely indicate that we were wasting human effort labeling examples it already understood.
 
-## Softmax scores are not probabilities of being correct
+### Softmax scores are not probabilities of being correct
 
 The classifier returns a score for every category. After applying softmax, we might see something like:
 
@@ -324,7 +318,7 @@ A softmax score is not automatically a calibrated probability that the predictio
 
 These **confident controls** helped uncover systematic mistakes that pure uncertainty sampling would never find.
 
-## Then I broke the production model
+### Then I broke the production model
 
 One of the most useful failures happened during production training.
 
@@ -351,7 +345,7 @@ That looked very suspicious and after checking the model against known labeled d
 
 Almost all of them ended up as `waste` with the overall accuracy still high enough that this failure was not immediately obvious.
 
-## Training-set fit as a sanity check
+### Training-set fit as a sanity check
 
 From that point on, I added another check after final production training:
 
@@ -379,7 +373,7 @@ fit check
 
 No fresh randomly initialized classifier is created in the second stage.
 
-## 733 manually curated examples
+### 733 manually curated examples
 
 After several active-learning rounds, the dataset reached 733 manually labeled resolutions. Ambiguous examples were deliberately excluded.
 
@@ -397,7 +391,7 @@ model v1.0.0
 
 At that point I stopped development.
 
-## Why stop training?
+### Why stop training?
 
 It would be easy to continue indefinitely. Find another mistake, label it, retrain, find another mistake, and repeat. But then the same historical corpus would increasingly influence not only training, but also taxonomy design and development decisions.
 
@@ -465,4 +459,4 @@ If licensing or quality requirements eventually push me toward another Czech or 
 
 ## Resources
 
-* https://github.com/honza-kasik/litovel-resolution-classifier
+* <https://github.com/honza-kasik/litovel-resolution-classifier>
