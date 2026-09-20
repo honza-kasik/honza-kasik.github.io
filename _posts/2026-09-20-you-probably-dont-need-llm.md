@@ -10,7 +10,10 @@ toc: true
 ## Contents
 {: .no_toc }
 
-# You Probably Don’t Need an LLM to Classify Czech Municipal Documents
+* TOC
+{:toc}
+
+## From LLMs to a Small Specialized Classifier
 
 While working on a project that processes resolutions published by the City Council and Municipal Assembly of Litovel, I ran into a fairly simple requirement: I wanted to automatically assign each resolution to a thematic category.
 
